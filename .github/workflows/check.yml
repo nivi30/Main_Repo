@@ -8,5 +8,5 @@ jobs:
     uses: nivi30/central-workflow/.github/workflows/non-node-prod.yml@main
     with:
       node-version: 14
-      npm_command: npm install
+      npm_command: build_npm
 
