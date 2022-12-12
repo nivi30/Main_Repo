@@ -4,16 +4,9 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
+  Automation:
+    uses: central-workflow/.github/workflows/non-node-prod.yml@master
+    with:
+      node-version: 14
+      npm_command: npm install
 
-    runs-on: ubuntu-latest
-
-    steps:
-      - uses: actions/checkout@v3
-      - name: Use Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: 14
-      - run: npm install
-      - run: npm run build --if-present
-      - run: npm test
