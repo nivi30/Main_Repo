@@ -4,9 +4,9 @@ on:
   workflow_dispatch:
 
 jobs:
-  Automation:
-    uses: 'nivi30/central-workflow/.github/workflows/non-node-prod.yml@main'
+  call-ci-workflow:
+    uses: nivi30/central-workflow/.github/workflows/non-node-prod.yml@master
     with:
-      node-version: 14
+      node-version: '14'
       npm_command: npm install
 
