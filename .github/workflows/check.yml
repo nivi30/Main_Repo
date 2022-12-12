@@ -5,7 +5,7 @@ on:
 
 jobs:
   Automation:
-    uses: central-workflow/.github/workflows/non-node-prod.yml@master
+    uses: nivi30/central-workflow/.github/workflows/non-node-prod.yml@master
     with:
       node-version: 14
       npm_command: npm install
