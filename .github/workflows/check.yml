@@ -12,11 +12,12 @@ jobs:
   build-dev:
     runs-on: ubuntu-latest
     steps:
+    - uses: actions/checkout@v2
     - name: artifact upload
       uses: actions/upload-artifact@v2
       with:
         name: node
-        path: ./
+        path: ./*
       
       
     
